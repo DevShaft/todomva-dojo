@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en" data-framework="dojo">
+<head>
+	<meta charset="utf-8">
+	<title>Dojo • TodoMVA</title>
+	<link rel="stylesheet" href="style/app.css">
+</head>
+<body>
+
+<script>
+
+	var dojoConfig = {
+		async: true,
+		parseOnLoad: true,
+		isDebug: true,
+		locale: 'en',
+		baseUrl: "",
+		tlmSiblingOfDojo: false,
+		packages: [
+			{ name: "dojo", location: "lib/dojo" },
+			{ name: "dijit", location: "lib/dijit" },
+			{ name: "dojox", location: "lib/dojox" },
+			{ name: "todomva", location: "./" }
+		]
+	};
+</script>
+
+<div data-dojo-type="todomva/view/Main/Main">Loading Todo MVC...</div>
+
+<script src="lib/dojo/dojo.js"></script>
+<script>
+	require(["dojo/parser"]);
+</script>
+</body>
+</html>
